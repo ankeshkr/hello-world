@@ -9,18 +9,17 @@ model = pickle.load(open('model.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
-@app.route('/predict',methods=['POST'])
-def predict():
+@app.route('/hello',methods=['POST'])
+def hello():
     '''
     For rendering results on HTML GUI
     '''
     int_features = [int(x) for x in request.form.values()]
-    final_features = [np.array(int_features)]
-    prediction = model.predict(final_features)
+    answer(x)
 
-    output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text='Employee Salary should be $ {}'.format(output))
+
+    return render_template('index.html', prediction_text=.format(answer))
 
 
 if __name__ == "__main__":
