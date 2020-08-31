@@ -14,7 +14,7 @@ def hello():
     For rendering results on HTML GUI
     '''
     int_features = [str(x) for x in request.form.values()]
-    ans=answer(x)
+    ans=hello.answer(x)
 
 
 
