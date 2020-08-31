@@ -13,12 +13,12 @@ def hello():
     '''
     For rendering results on HTML GUI
     '''
-    int_features = [int(x) for x in request.form.values()]
+    int_features = [str(x) for x in request.form.values()]
     ans=answer(x)
 
 
 
-    return render_template('index.html', prediction_text=.format(ans))
+    return render_template('index.html', hello_text=.format(ans))
 
 
 if __name__ == "__main__":
