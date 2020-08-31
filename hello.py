@@ -8,4 +8,4 @@ answer(a)
 pickle.dump(answer, open('hello.pkl','wb'))
 
 # Loading model to compare the results
-model = pickle.load(open('hello.pkl','rb'))
+hello = pickle.load(open('hello.pkl','rb'))
