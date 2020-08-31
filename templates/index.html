@@ -13,20 +13,17 @@
 
 <body>
  <div class="login">
-	<h1>Predict Salary Analysis</h1>
+	<h1>Hello world</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="experience" placeholder="Experience" required="required" />
-        <input type="text" name="test_score" placeholder="Test Score" required="required" />
-		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
-
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    <form action="{{ url_for('hello')}}"method="post">
+	<input type="text" name="your-name" placeholder="Your Name" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Hello</button>
     </form>
 
    <br>
    <br>
-   {{ prediction_text }}
+   {{ hello_text }}
 
  </div>
 
