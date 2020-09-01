@@ -17,7 +17,7 @@ def hello():
 
 
     #return render_template('index.html', hello_text='my name is {},{}'.format(result,name))
-    return render_template('index.html', hello_text='my name is {}'.format(result))
+    return render_template('index.html', hello_text='Hello!! my name is {}'.format(result))
 
 
 if __name__ == "__main__":
