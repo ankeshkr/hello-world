@@ -13,8 +13,8 @@ def hello():
     '''
     For rendering results on HTML GUI
     '''
-    int_features = [str(x) for x in request.form.values()]
-    ans=hello.answer(x)
+    name = [str(x) for x in request.form.values()]
+    ans=hello.answer(name)
 
 
 
