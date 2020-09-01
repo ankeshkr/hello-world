@@ -1,8 +1,8 @@
-lfrom flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template
 import pickle
 
 app = Flask(__name__)
-hello = pickle.load(open('hello.pkl', 'rb'))
+result = pickle.load(open('hello.pkl', 'rb'))
 
 @app.route('/')
 def home():
@@ -13,12 +13,11 @@ def hello():
     '''
     For rendering results on HTML GUI
     '''
-    name = [str(x) for x in request.form.values()]
-    ans=hello.answer(name)
+  #  name = [str(x) for x in request.form.values()]
 
 
-
-    return render_template('index.html', hello_text=.format(ans))
+    #return render_template('index.html', hello_text='my name is {},{}'.format(result,name))
+    return render_template('index.html', hello_text='my name is {}'.format(result))
 
 
 if __name__ == "__main__":
