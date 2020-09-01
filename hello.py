@@ -1,14 +1,14 @@
 import pickle
 def answer(name):
-  return "Hello" + str(name)
+  return "Ankesh " + str(name)
 
 
-a="ankesh"
+a="kr"
 
 res=answer(a)
 #print (res)
-pickle.dump(res, open('hello2.pkl','wb'))
+pickle.dump(res, open('hello3pkl','wb'))
 
 # Loading model to compare the results
-hello = pickle.load(open('hello2.pkl','rb'))
+hello = pickle.load(open('hello3.pkl','rb'))
 print (hello)
