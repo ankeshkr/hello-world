@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 
 app = Flask(__name__)
-result = pickle.load(open('hello.pkl', 'rb'))
+result = pickle.load(open('hello2.pkl', 'rb'))
 
 @app.route('/')
 def home():
